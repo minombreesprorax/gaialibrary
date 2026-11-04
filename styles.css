@@ -1,0 +1,39 @@
+:root {
+    --accent: #a80000;
+    --accent-text: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'decade';
+    src: url("FONT/decade.woff2");
+}
+
+@font-face {
+    font-family: 'gaia';
+    src: url("FONT/gaia.woff2");
+}
+
+@font-face {
+    font-family: 'Yusei Magic';
+    src: url("FONT/yusei.woff2");
+    font-weight: 100;
+}
+
+header {
+    text-align: center;
+    background-color: var(--accent);
+    color: var(--accent-text);
+    padding: 10px;
+}
+
+header {
+    font-family: "decade", "M PLUS U", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
