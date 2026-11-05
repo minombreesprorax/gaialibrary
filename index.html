@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -5,13 +6,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Heisei Fase II - Gaia Library</title>
-    <meta name="description" content="El catálogo de Gaia Library para la segunda fase de la era Heisei de Kamen Rider (2009-2019).">
+    <meta name="description" content="Explora Gaia Library, una biblioteca de referencia dedicada a las diez series de Kamen Rider Heisei Fase II (2009-2019).">
     <meta name="theme-color" content="#0c0c0e">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+U:wght@100..900&display=swap" rel="stylesheet">
+
+    <style>
+        /* Imagen principal */
+        #top {
+            background-position: center top;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Degradado inferior de la imagen principal */
+        #top {
+            background-image:
+                linear-gradient(
+                    90deg,
+                    rgba(12, 12, 14, 0.96) 0%,
+                    rgba(12, 12, 14, 0.82) 42%,
+                    rgba(12, 12, 14, 0.35) 100%
+                ),
+                linear-gradient(
+                    0deg,
+                    #0c0c0e 0%,
+                    rgba(12, 12, 14, 0.85) 12%,
+                    rgba(12, 12, 14, 0.25) 45%,
+                    transparent 65%
+                ),
+                url('IMG/indexriders.jpg');
+        }
+
+        /* Imágenes uniformes de las tres tarjetas */
+        .collection-grid--preview .series-card__image {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+
+        .collection-grid--preview .series-card__image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,9 +93,10 @@
                     <h1>Heisei <br><span class="hero__accent">Fase II</span></h1>
 
                     <p class="hero__lead">
-                        Una biblioteca de la segunda era Heisei de Kamen Rider: diez series, de
-                        <em>W</em> a <em>Zi-O</em>. El estante se está preparando; las entradas
-                        detalladas se catalogarán aquí a medida que se escriban.
+                        Una biblioteca dedicada a la segunda fase de la era Heisei de
+                        Kamen Rider. Diez series, desde <em>W</em> hasta <em>Zi-O</em>,
+                        reunidas en un mismo lugar para explorar sus historias,
+                        protagonistas y sistemas de transformación.
                     </p>
 
                     <div class="hero__actions">
@@ -69,8 +114,8 @@
                             <dd>10</dd>
                         </div>
                         <div>
-                            <dt>Estado</dt>
-                            <dd>En catalogación</dd>
+                            <dt>Colección</dt>
+                            <dd>Completa</dd>
                         </div>
                     </dl>
                 </div>
@@ -88,38 +133,38 @@
                     <p class="kicker"><span lang="ja">平成</span> &middot; Heisei</p>
                     <h2>Una era, tres estantes</h2>
                     <p>
-                        La biblioteca se organiza por era. La segunda fase está abierta para
-                        catalogación; los estantes contiguos permanecen cerrados hasta que se
-                        escriban sus entradas.
+                        La historia moderna de Kamen Rider se divide en distintas etapas.
+                        Gaia Library comienza con Heisei Fase II y reúne sus diez series,
+                        desde el debut de <em>W</em> hasta el cierre de <em>Zi-O</em>.
                     </p>
                 </div>
 
                 <div class="era-grid">
                     <article class="era-card">
-                        <span class="era-card__status">Aún sin catalogar</span>
+                        <span class="era-card__status">Heisei</span>
                         <h3>Heisei Fase I</h3>
                         <p class="era-card__years">2000-2009</p>
                         <p>De <em>Kuuga</em> a <em>Decade</em>.</p>
                     </article>
 
                     <article class="era-card era-card--active">
-                        <span class="era-card__status">En curso</span>
+                        <span class="era-card__status">Colección actual</span>
                         <h3>Heisei Fase II</h3>
                         <p class="era-card__years">2009-2019</p>
                         <p>De <em>W</em> a <em>Zi-O</em>. Diez series.</p>
                     </article>
 
                     <article class="era-card">
-                        <span class="era-card__status">Aún sin catalogar</span>
-                        <h3>Reiwa</h3>
-                        <p class="era-card__years">2019-</p>
-                        <p>De <em>Zero-One</em> en adelante.</p>
+                        <span class="era-card__status">Reiwa</span>
+                        <h3>Era Reiwa</h3>
+                        <p class="era-card__years">2019-presente</p>
+                        <p>Desde <em>Zero-One</em> en adelante.</p>
                     </article>
                 </div>
 
                 <p class="section-foot">
                     <a class="text-link" href="la-era.html">
-                        Ver la línea de tiempo completa <span aria-hidden="true">&rarr;</span>
+                        Explorar la línea de tiempo <span aria-hidden="true">&rarr;</span>
                     </a>
                 </p>
             </div>
@@ -129,48 +174,66 @@
             <div class="wrap">
                 <div class="section-head">
                     <p class="kicker"><span lang="ja">平成第二期</span> &middot; La colección</p>
-                    <h2>El estante, desde el principio</h2>
+                    <h2>El comienzo de la colección</h2>
                     <p>
-                        La colección reúne diez series. Estas son las primeras tres fichas; el resto
-                        espera en la página de la colección.
+                        Diez series forman el catálogo de Heisei Fase II.
+                        Estas son las tres primeras, en orden de emisión.
                     </p>
                 </div>
 
                 <div class="collection-grid collection-grid--preview">
-                    <a class="series-card" href="la-era.html#w" style="--series-accent: #3f8f5f">
-                        <div class="series-card__top">
-                            <span class="series-card__no">01</span>
-                            <span class="series-card__year">2009</span>
+                    <a class="series-card" href="series/w.html" style="--series-accent: #00c853">
+                        <div class="series-card__image">
+                            <img src="IMG/krw.jpeg" alt="Kamen Rider W" loading="lazy">
                         </div>
-                        <h3>Kamen Rider W</h3>
-                        <p class="series-card__jp" lang="ja">仮面ライダーW</p>
-                        <p class="series-card__status">
-                            Ficha pendiente <span aria-hidden="true">&rarr;</span>
-                        </p>
+                        <div class="series-card__content">
+                            <div class="series-card__top">
+                                <span class="series-card__no">01</span>
+                                <span class="series-card__year">2009-2010</span>
+                            </div>
+                            <h3>Kamen Rider W</h3>
+                            <p class="series-card__jp" lang="ja">仮面ライダーW</p>
+                            <p class="series-card__status">
+                                Dirección: Ryuta Tasaki
+                                <span aria-hidden="true">&rarr;</span>
+                            </p>
+                        </div>
                     </a>
 
-                    <a class="series-card" href="la-era.html#ooo" style="--series-accent: #c47b1e">
-                        <div class="series-card__top">
-                            <span class="series-card__no">02</span>
-                            <span class="series-card__year">2010</span>
+                    <a class="series-card" href="series/ooo.html" style="--series-accent: #d32f2f">
+                        <div class="series-card__image">
+                            <img src="IMG/krooo.png" alt="Kamen Rider OOO" loading="lazy">
                         </div>
-                        <h3>Kamen Rider OOO</h3>
-                        <p class="series-card__jp" lang="ja">仮面ライダーオーズ</p>
-                        <p class="series-card__status">
-                            Ficha pendiente <span aria-hidden="true">&rarr;</span>
-                        </p>
+                        <div class="series-card__content">
+                            <div class="series-card__top">
+                                <span class="series-card__no">02</span>
+                                <span class="series-card__year">2010-2011</span>
+                            </div>
+                            <h3>Kamen Rider OOO</h3>
+                            <p class="series-card__jp" lang="ja">仮面ライダーオーズ</p>
+                            <p class="series-card__status">
+                                Dirección: Ryuta Tasaki
+                                <span aria-hidden="true">&rarr;</span>
+                            </p>
+                        </div>
                     </a>
 
-                    <a class="series-card" href="la-era.html#fourze" style="--series-accent: #d9661f">
-                        <div class="series-card__top">
-                            <span class="series-card__no">03</span>
-                            <span class="series-card__year">2011</span>
+                    <a class="series-card" href="series/fourze.html" style="--series-accent: #2196f3">
+                        <div class="series-card__image">
+                            <img src="IMG/krfourze.jpg" alt="Kamen Rider Fourze" loading="lazy">
                         </div>
-                        <h3>Kamen Rider Fourze</h3>
-                        <p class="series-card__jp" lang="ja">仮面ライダーフォーゼ</p>
-                        <p class="series-card__status">
-                            Ficha pendiente <span aria-hidden="true">&rarr;</span>
-                        </p>
+                        <div class="series-card__content">
+                            <div class="series-card__top">
+                                <span class="series-card__no">03</span>
+                                <span class="series-card__year">2011-2012</span>
+                            </div>
+                            <h3>Kamen Rider Fourze</h3>
+                            <p class="series-card__jp" lang="ja">仮面ライダーフォーゼ</p>
+                            <p class="series-card__status">
+                                Dirección: Koichi Sakamoto
+                                <span aria-hidden="true">&rarr;</span>
+                            </p>
+                        </div>
                     </a>
                 </div>
 
@@ -184,21 +247,24 @@
             <div class="wrap about-grid">
                 <div>
                     <p class="kicker"><span lang="ja">図書館</span> &middot; La biblioteca</p>
-                    <h2>Una biblioteca que se está escribiendo</h2>
+                    <h2>Una biblioteca para explorar Kamen Rider</h2>
                 </div>
 
                 <div class="about-copy">
                     <p>
-                        Gaia Library es una referencia estática hecha por fans para Kamen Rider.
-                        Esta página es la entrada a la colección de Heisei Fase II; el resto del
-                        estante se abrirá a medida que se escriba.
+                        Gaia Library es una referencia independiente hecha por fans.
+                        Su objetivo es reunir información sobre las series, sus personajes,
+                        formas, sistemas de transformación y episodios.
                     </p>
+
                     <p>
-                        La estructura está lista antes que el contenido. Las fichas se añadirán sin
-                        reconstruir el sitio.
+                        Cada serie cuenta con su propio espacio dentro de la colección,
+                        siguiendo un formato común para que la información sea fácil
+                        de consultar y comparar.
                     </p>
+
                     <a class="text-link" href="acerca.html">
-                        Sobre el proyecto <span aria-hidden="true">&rarr;</span>
+                        Conocer el proyecto <span aria-hidden="true">&rarr;</span>
                     </a>
                 </div>
             </div>
